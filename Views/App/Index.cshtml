@@ -1,0 +1,35 @@
+﻿@model List<Author>
+
+@{
+}
+
+<div id="mainArea">
+
+    @foreach (var author in Model)
+    {
+    <div class="authorBoxs">
+        @if (author.AuthorId < 10)
+        {
+            <img src="~/resource/img/@(author.AuthorId).png" />
+        }
+        else
+        {
+            <img src="~/resource/img/0.jpg" />
+        }
+
+        <h3>@author.AuthorName @author.AuthorSurName</h3>
+        <h4>Books:</h4>
+        @if (author.Books != null)
+        {
+            @foreach (var book in author.Books)
+            {
+                <ul>
+                    <li>@book.BookName</li>
+                    <li>Page: @book.CountOfPage</li>
+                    <li>Category: @book.SubjectName</li>
+                </ul>
+            }
+        }
+    </div>
+    }
+</div>

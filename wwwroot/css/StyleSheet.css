@@ -1,0 +1,28 @@
+﻿body {
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div#mainArea {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+}
+
+div.authorBoxs {
+    width: 18%;
+    height: auto;
+    border: 1px solid lightgray;
+    padding:0.5%;
+    margin: 1%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

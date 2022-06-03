@@ -1,0 +1,12 @@
+{
+  "ConnectionString": {
+    "LiblaryContextDbPath": "Server=(localdb)\\ProjectsV13;Database=LiblaryDb;Trusted_Connection=True;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  }
+
+}
